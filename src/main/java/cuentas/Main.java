@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) { 
         operativa_cuenta(0);// refactor --> introduce metodo
-        
+        System.err.println("");
     }
 
     private static void operativa_cuenta(float cantidad) { // refactor modificación de método.
