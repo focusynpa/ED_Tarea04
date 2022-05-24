@@ -2,12 +2,12 @@ package cuentas;
 
 public class Main {
 
-    public static void main(String[] args) {
-        operativa_cuenta(0);
+    public static void main(String[] args) { 
+        operativa_cuenta(0);// refactor --> introduce metodo
         
     }
 
-    private static void operativa_cuenta(float cantidad) {
+    private static void operativa_cuenta(float cantidad) { // refactor modificación de método.
         CCuenta cuenta1;
         double saldoActual;
 
