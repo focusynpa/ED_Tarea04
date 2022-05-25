@@ -1,4 +1,10 @@
+
 package cuentas;
+/**
+ * @author Patricia DArias Hughes
+ * @version 1.0
+ * @since 
+ */
 
 public class Main {
 
@@ -6,8 +12,12 @@ public class Main {
         operativa_cuenta(0);// refactor --> introduce metodo
         System.err.println("");
     }
-
+/**
+ * 
+ * @param cantidad 
+ */
     private static void operativa_cuenta(float cantidad) { // refactor modificación de método.
+        
         CCuenta cuenta1;
         double saldoActual;
 
@@ -20,11 +30,12 @@ public class Main {
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
+        
         try {
             System.out.println("Ingreso en cuenta");
             cuenta1.ingresar(695);
-        } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
+        } catch (Exception e) { 
+          System.out.print("Fallo al ingresar");
         }
     }
 }

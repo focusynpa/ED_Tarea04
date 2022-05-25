@@ -1,5 +1,10 @@
 package cuentas;
-
+/**
+ * 
+ * @author Patricia Darias Hughes
+ * @version 1.0
+ * @since 25/05/2022
+ */
 public class CCuenta {
 
 
@@ -11,26 +16,44 @@ public class CCuenta {
     public CCuenta()
     {
     }
-
+/**
+ * 
+ * @param nom
+ * @param cue
+ * @param sal
+ * @param tipo 
+ */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
     }
-
+/**
+ * 
+ * @return saldo
+ */
     public double estado()
     {
         return saldo;
     }
-
+/**
+ * 
+ * @param cantidad
+ * @throws Exception 
+ */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
             throw new Exception("No se puede ingresar una cantidad negativa");
         saldo = saldo + cantidad;
     }
-
+/**
+ * 
+ * @param cantidad
+ * @throws Exception 
+ * 
+ */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
